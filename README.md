@@ -1,50 +1,100 @@
-# Welcome to your Expo app 👋
+# 🎫 Ticket Booking Mobile App (React Native + Expo)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is the **mobile frontend** for the [Ticket Booking Backend (Golang)](https://github.com/pyroblazer/ticket-booking-backend-golang). Built with **React Native**, **Expo Router**, and **Axios**, it allows users to browse events and book tickets via a clean, modern interface.
 
-## Get started
+---
 
-1. Install dependencies
+## 🚀 Features
 
-   ```bash
-   npm install
-   ```
+- 🔐 User authentication (JWT-based)
+- 📅 Browse available events
+- 🎟️ Book and manage your tickets
+- 📱 Optimized for Android & iOS
+- 📡 Connects to the backend via REST API
+- 🧭 Expo Router for navigation
 
-2. Start the app
+---
 
-   ```bash
-   npx expo start
-   ```
+## 📦 Tech Stack
 
-In the output, you'll find options to open the app in a
+- **React Native**
+- **Expo**
+- **Expo Router**
+- **Axios** for API calls
+- **AsyncStorage** for JWT persistence
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 📲 Getting Started
 
-## Get a fresh project
-
-When you're ready, run:
+### 1. Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/pyroblazer/ticket-booking-mobile-react-native-expo.git
+cd ticket-booking-mobile-react-native-expo
+````
+
+### 2. Install Dependencies
+
+```bash
+npm install
+# or
+yarn install
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Configure Environment
 
-## Learn more
+Create a `.env` file at the root:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+cp .env.example .env
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+**Example `.env`:**
 
-## Join the community
+```env
+API_URL_ANDROID=http://10.0.2.2:8080
+API_URL_IOS=http://127.0.0.1:8080
+API_URL_WEB=http://127.0.0.1:8080
+```
 
-Join our community of developers creating universal apps.
+### 4. Run the App
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm start
+# then press 'a' for Android or 'i' for iOS simulator
+```
+
+---
+
+## 🔗 Backend API
+
+Make sure the backend is running at `http://localhost:8080` (or your configured IP).
+
+Check out the backend repo:
+👉 [ticket-booking-backend-golang](https://github.com/pyroblazer/ticket-booking-backend-golang)
+
+---
+
+## 🧪 Testing
+
+```bash
+npm run test
+```
+
+---
+
+## 🙋 Contributing
+
+1. Fork this repo
+2. Create a new branch
+3. Make changes and commit
+4. Open a pull request 🚀
+
+---
+
+## 🧑‍💻 Maintainer
+
+Built with ❤️ by [pyroblazer](https://github.com/pyroblazer)
+
+```

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "ticket-booking-new-mobile",
-    "slug": "ticket-booking-new-mobile",
+    "name": "ticket-booking-mobile-react-native-expo",
+    "slug": "ticket-booking-mobile-react-native-expo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -9,14 +9,16 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.pyroblazer.ticketbookingnewmobile"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.pyroblazer.ticketbookingnewmobile"
     },
     "web": {
       "bundler": "metro",
